@@ -5,8 +5,8 @@ const Home: FC<{}> = (): ReactElement => {
   return (
     <div>
       <Text property="Hello there, general kenobi." />
-      <LoginButton oidcIssuer="https://inrupt.com" redirectUrl="http://localhost:3000">
-        Login, bruh
+      <LoginButton oidcIssuer="https://broker.demo-ess.inrupt.com/" redirectUrl="http://localhost:3000">
+        Login
       </LoginButton>
       asd
     </div>
