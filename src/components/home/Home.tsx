@@ -1,15 +1,16 @@
 import React, { FC, ReactElement } from "react";
-import { Text, LoginButton } from "@inrupt/solid-ui-react";
+import { Link } from "react-router-dom";
+import './Home.css';
 
-const Home: FC<{}> = (): ReactElement => {
+const Home: FC = (): ReactElement => {
   return (
-    <div>
-      <Text property="Hello there, general kenobi." />
-      <LoginButton oidcIssuer="https://broker.demo-ess.inrupt.com/" redirectUrl="http://localhost:3000">
-        Login
-      </LoginButton>
-      asd
-    </div>
+    <React.Fragment>
+      <div className="mb-4">Home route</div>
+      <Link to="/bank" className="mb-4 block">
+        Bank
+      </Link>
+      <Link to="/notary">Notary</Link>
+    </React.Fragment>
   );
 };
 

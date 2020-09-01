@@ -5,7 +5,7 @@ import {
   LogoutButton,
   SessionContext,
 } from "@inrupt/solid-ui-react";
-import logo from "../../logo.svg";
+import logo from "../logo.svg";
 import "./Header.css";
 
 const Header: FC<{}> = (): ReactElement => {

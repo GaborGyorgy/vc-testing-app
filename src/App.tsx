@@ -1,21 +1,20 @@
 import React from "react";
 import "./App.css";
-import { SessionProvider } from "@inrupt/solid-ui-react";
-import Header from "./components/header/Header";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Home from "./components/home/Home";
+import withSessionProvider from "./hoc/withSessionProvider";
+import { Bank, Home, Notary } from "./components";
 
 function App() {
   return (
-    <SessionProvider>
-      <div className="App container">
-        <Header />
-        <main className="banner-container">
-          {/* <Home /> */}
-          hello world
-        </main>
-      </div>
-    </SessionProvider>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={withSessionProvider(Home)} />
+        <Route path="/bank" component={Bank} />
+        <Route path="/notary" component={Notary} />
+        <Route render={() => <div>Page no found.</div>} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
