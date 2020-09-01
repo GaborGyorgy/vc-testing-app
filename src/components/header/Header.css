@@ -1,0 +1,54 @@
+header {
+  display: flex;
+  margin-bottom: 130px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100%;
+  display: inline-block;
+}
+
+nav {
+  display: flex;
+    width: 80vw;
+    justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  align-items: stretch;
+  align-self: center;
+  list-style-type: none;
+}
+
+nav li {
+  margin-right: 20px;
+  margin-bottom: 0;
+  margin-left: 20px;
+  padding-left: 0;
+  background-image: none;
+}
+
+.secondary-link {
+  display: inline-block;
+  color: #222;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.secondary-link:hover {
+  color: #1a237e;
+}
+
+.secondary-link.licencing-link {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
